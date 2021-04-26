@@ -1,0 +1,27 @@
+#-------------------------------------------------------------------------------
+# Description:a function to calculate and return the retail cost,this function will receive two values from variables containing wholesale cost and markup percentage
+#-------------------------------------------------------------------------------
+# retail_cost() function defined here compute and return retail cost
+def retail_cost( wholesale_cost ):
+    return 0
+
+def main():
+    # get wholesale cost from user
+    string_wholesale = input("Enter the wholesale cost, numbers and decimal only: ")
+ 
+      # convert the string into a float value and store it into the variable: wholesale
+    wholesale = float( string_wholesale )
+
+      # confirm the information entered back to the user
+    print("You entered a wholesale cost of: ", wholesale )
+    print() # skip a line
+    string_markup = input("Enter the markup percentage, i.e. 20 percent is entered as 0.2:")
+    markup = float( string_markup )
+    print("You entered a markup percentage of:", markup )
+    print() # skip a line
+    print("The retail cost is:", (wholesale * (markup + 1)))
+    print() # skip a line
+    print("by Elizabeth Rummage")
+    return 0 # main function successful end
+
+main() # calls the main function

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------------------------------------------------------------------
+# Description: Calculate Pizza order total using Python Lists - no if/elif/else required unless error handling.
+#-----------------------------------------------------------------------------------------------------------------------
+from qt_messagebox import *
+
+pizza_size = 0
+
+pizza_cost = 0.0
+
+amount_ordered = 0
+
+choices = ["a","b","c","d"]
+
+size = ["small", "medium", "large", "extra-large"]
+
+price = [ 7.99, 14.99, 18.99, 84.95 ] 
+
+print("What size would you like?")
+
+print("a for small ($7.99), b for medium ($14.99), c for large ($18.99), d for extra-large ($21.99)" )
+
+pick = input("Please enter a, b, c, or d:")
+
+list_location = choices.index( pick )
+
+pizza_size = size[list_location]
+
+pizza_cost = price[ list_location ]
+
+print("Ok,",pizza_size,"that is $", pizza_cost,"each")
+
+amount_ordered = int(input("How many would you like?"))
+
+total_cost = (pizza_cost * amount_ordered)
+
+message = ("Your total is: $"+ "{:3.2f}".format(total_cost))
+
+print("by Elizabeth Rummage")
+
+button_clicked = messageBox("Pizza Total", message)
+
+print( button_clicked )

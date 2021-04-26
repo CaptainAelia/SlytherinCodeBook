@@ -1,0 +1,9 @@
+// value kelvin will stay constant at 293
+let kelvin = 293;
+// converting kelvin to celsius
+let celsius = (kelvin - 273);
+// converting celsius to fahrenheit
+let fahrenheit = ((celsius * 9/5) +32 );
+// round down temperature integer
+fahrenheit = Math.floor(fahrenheit);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`)

@@ -1,0 +1,7 @@
+#-------------------------------------------------------------------------------
+# Description:   Print the odd numbers counting down from 23,down to -23 inclusive. 
+#-------------------------------------------------------------------------------
+for i in range(23,-24,-2):
+    print(i)
+
+print("by Elizabeth Rummage.")

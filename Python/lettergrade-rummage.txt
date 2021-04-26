@@ -1,0 +1,32 @@
+#-----------------------------------------------------------------------------------------------------------------------
+# Name: Elizabeth Rummage
+# Description: Evaluate a numeric grade entered by the user and display the correct letter grade
+#---------------------------------------------------------------------------------------------------
+from qt_messagebox import *
+
+# get the weight from the user
+grade_in = input("Enter grade: ")
+
+# convert string into an integer (number)
+grade = int(grade_in)
+
+if grade >= 90:
+    message = " A"
+elif grade >= 80:
+    message = " B"
+elif grade >= 70:
+    message = " C"
+elif grade >= 60:
+    message = " D"
+else:
+    message = " F"
+
+# finish building the shipping message
+message = "Grade earned:" + message
+
+# import the Python code, qt_messagebox.py must be in the same folder as this script
+from qt_messagebox import *
+button_pressed = messageBox("Letter Grade Result", message)  # <=== this line shows the pop-up messagebox
+
+#demonstrate we can see the button clicked by the user
+print( button_pressed )

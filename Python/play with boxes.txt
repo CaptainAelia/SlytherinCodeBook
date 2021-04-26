@@ -1,0 +1,26 @@
+from qt_messagebox import *
+
+# get the weight from the user
+weight_in = input("Enter the shipment weight: ")
+
+# convert string into an integer (number)
+weight = int(weight_in)
+
+if weight >= 901:
+    message = "Cannot Ship!"
+elif weight >= 501:
+    message = "Ship by Truck"
+elif weight >= 100:
+    message = "Ship by Air"
+else:
+    message = "Ship by Air Express"
+
+# finish building the shipping message
+message = weight_in + " pounds " + message
+
+# import the Python code, qt_messagebox.py must be in the same folder as this script
+from qt_messagebox import *
+button_pressed = messageBox("Shipping Message", message)  # <=== this line shows the pop-up messagebox
+
+#demonstrate we can see the button clicked by the user
+print( button_pressed )

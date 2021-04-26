@@ -1,0 +1,236 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	background-color: #F5F5F5;
+}
+body {
+	background-color: #3F2860;
+	font-family: verdana, arial, "sans serif"; 
+} 
+header {
+	background-image: url(lilyheader.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #9BC1C2;
+	height: 150px;
+}
+h1	{
+	background-position: right;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 1px;
+	padding-top: 50px;
+	padding-left: 2em;
+	text-align: left;
+    color: #000000;
+}
+main {
+	background-color: #FFFFFF;
+	margin-left: 170px;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	display: block;
+}
+nav {
+	background-color: #F5F5F5;
+	float: left;
+	width: 160px;
+	padding-top: 6px;
+	font-weight: bold;
+	font-size: 16px;
+}
+nav a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 2px 2px 0px 3px #CCCCCC;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+nav a:link {
+	color: #3F2860;
+}
+nav a:visited {
+	color: #497777;
+}
+nav a:hover {
+	color: #A26100; border: 3px inset #333333;
+}
+nav ul {
+	list-style-type: none;
+}
+table {
+	width: 50%;
+	margin: auto;
+	border: 1px solid #3F2860;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+caption {
+		margin: 1em;
+		font-weight: bold;
+		font-size: 120%
+}
+td, th {
+		border: 1px solid #3F2860;
+		padding: 5px;
+}
+tr:nth-of-type(even){
+	background-color: #9BC1C2;
+}
+h2	{ 
+	color: #000000;
+    text-align: left; 
+	padding-top: 3px;
+	margin-top: 0px;
+}
+li	{ 
+	color: #3F2860; 
+	font-family: "Georgia, Times New Roman, serif";
+}
+img {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+#wrapper { 
+	background-color: #F5F5F5;
+	min-width: 1200px;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	background-color: #9BC1C2;
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+	clear: left;
+}
+ul	{ 
+	font-weight: bold;
+    color: #5280C5;
+	padding-left: 0;
+}
+.floatleft {
+	float: left;
+	margin-right: 4em;
+}
+.clear {
+	clear: both;
+}
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	width: 10em;
+	padding-right: 1em;
+}
+input, textarea {
+	display: block;
+	margin-bottom: 2em;
+}
+#mySubmit {
+	margin-left: 12em;
+}
+form {
+	padding: 3em;
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#wrapper {
+		width: 100%;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		padding: 1px;
+	}
+	h1 {
+		padding-top: 1em;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding-left: 2em;
+	}
+	nav a {
+		padding: 0.2em;
+		margin-left: 0.3em;
+		float: left;
+		width: 23%;
+	}
+	main {
+		padding: 2.5em 1em;
+		margin: 0;
+		font-size: 90%;
+		clear: none;
+	}
+	main ul {
+		margin-left: 2em;
+	}
+	#floatleft {
+		margin: 0 0 1em 2em;
+	}
+	#clear {
+		padding-left: 2em;
+	}
+	#hero img { 
+		width: 100%;
+		height: auto;
+	}
+	h2, h3, p, dl {
+		padding: 0 2em;
+	}
+	#mobile { 
+	display: none;
+	}
+	#desktop {
+	display: inline;
+	}
+}
+@media only all and (max-width: 768px) {
+	h1 {
+		font-size: 2em;
+		padding: 0.25em 0 0 1.5em;
+		width: 85%;
+		text-align: center;
+	}
+	nav a {
+		padding: 0.5em;
+		width: 45%;
+		float: left;
+		min-width: 6em; 
+		margin-left: 0.5em;
+	}
+	main {
+		padding: 0;
+	}
+	#floatleft {
+		float: none;
+		display: none;
+	}
+	#hero {
+		display: none;
+	}
+	#footer {
+		padding: 0.5em;
+		margin: 0;
+	}
+	#mobile { 
+	display: none;
+	}
+	#desktop {
+	display: inline;
+	}
+}
+header, nav, main, footer {
+	display: block;
+}
